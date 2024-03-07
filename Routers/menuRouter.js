@@ -101,6 +101,4 @@ const { findByIdAndDelete } = require('../Models/person');
             }
               
           })
-   
-
           module.exports = router;
