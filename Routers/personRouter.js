@@ -3,6 +3,7 @@ const router = express.Router();
 const Person = require('./../Models/person'); 
 
 
+
 //router to send data from client to server and then saved it at database
 router.post('/',async(req,res)=> {     //post method to send the data from client to server so that server saveed it database
     try{
@@ -21,7 +22,7 @@ router.post('/',async(req,res)=> {     //post method to send the data from clien
 
 
 //router to fetch data from server to client 
-     router.get('/ ',async(req,res) =>{
+    router.get('/',async(req,res) =>{
     try{
         const data = await Person.find();
         console.log('data fetched');
